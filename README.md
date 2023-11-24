@@ -57,7 +57,7 @@ Link Dataset: [Stroke Prediciion Dataset](https://www.kaggle.com/datasets/fedeso
 Pada features id akan dihapus karena tidak memiliki hubungan dalam melakukan prediksi seseorang stroke
 
 ### Deskripsi Data
-<img src='https://drive.google.com/file/d/1jve2YErF4N43s1F-BrOSlJxaZZr10BF8/view?usp=drive_link' />
+1[Deskrisi]('https://drive.google.com/file/d/1jve2YErF4N43s1F-BrOSlJxaZZr10BF8/view?usp=drive_link')
 
 
 the left
