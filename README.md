@@ -282,16 +282,12 @@ img
 
  Hasil Evlauasi Proyek :
  - Accuracy
-   <div>
-    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/9a0271bf-30b3-4cc8-ac59-1f6fe43fa418"  style='display: block;
-    margin-left: auto;
-    margin-right: auto;'/>
-  </div><br>
-  |  | Train  | Test  |
-|---|---|---|---|---|
-| SVC  |  0.969149	 | 0.96204  |  
-|  KNN |  0.968852 | 0.959668 |  
-|  RFC |  0.999703	 | 0.96204 |  
+
+|      | Train        | Test     |
+|------|--------------|----------|
+| SVC  |  0.969149	  | 0.96204  |  
+|  KNN |  0.968852    | 0.959668 |  
+|  RFC |  0.999703	  | 0.96204  |  
 
  - Acurracy Score
   <div>
@@ -307,12 +303,12 @@ dari Hasil Evaluasi Accuracy Score tampak setiap model menunjukan hasil yang bai
 Hasil Pengujian:
 5 data pertama pada data test
 |  y_true | prediksi_knn  | prediksi_svm  | prediksi_rfc   |   
-|---|---|---|---|---|
-| 0  |  0 | 0  | 0  |   
-|  0 |  0 | 0  |  0 |   
-|  0 |  0 | 0  |  0 |   
-|  0 |  0 | 0  |  0 |   
-|  0 |  0 | 0  |  0 |   
+|---------|---------------|---------------|----------------|
+| 0       |             0 |            0  |             0  |   
+|       0 |             0 |            0  |    0           |   
+|  0      |             0 |            0  |              0 |   
+|  0      |             0 |            0  |              0 |   
+|  0      |             0 |            0  |              0 | 
 
 
 Pada pengujian data test, semua mengklasifikasikan data test dengan benar dimana hasil y_true adalah 0 yang artinya tidak terkena stroke dan hasil prediksi tiap model juga menunjukan angka 0 yang artinya sesuai dengan hasil sebenarnya. sehingga setiap model mampu memprediksi seseorang terkena stroke atau tidak. akan tetapi disini akan menggunakan model Random Forest Classifier sebagai model utama dikarenakan tingkat akurasi yang diberikan lebih tinggi dibanding model lainnya.
@@ -323,6 +319,7 @@ Model Machine Learning yang dihasilkan dapat secara tepat memprediksi seseorang 
 
 
 REFERENCE :
+
 [1] Teknika, J., & Estian Pambudi, R. (n.d.). Teknika 16 (02): 221-226. IJCCS, x, No.x, 1–5.
 
 [2] Puspitawuri, A., Santoso, E., & Dewi, C. (2019). Diagnosis Tingkat Risiko Penyakit Stroke Menggunakan Metode K-Nearest Neighbor dan Naïve Bayes (Vol. 3, Issue 4). http://j-ptiik.ub.ac.id
