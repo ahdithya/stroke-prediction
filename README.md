@@ -66,50 +66,133 @@ Berikut Tampilan hasil Statistik Data pada feature bertipe numeric
 
 ### Univariate Analysis
 #### Categorical Feature
- - Feature Gender<div>
+ - Feature Gender
+   <div>
   <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/b26a415d-ffbf-4295-9733-5d4a061e00a0"  style='display: block;
   margin-left: auto;
   margin-right: auto;'/>
 </div><br>
-<img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/881a8801-13a7-4b8d-9de5-045272811584"  style='display: block;
-  margin-left: auto;
-  margin-right: auto;'/>
-<img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/a54053a8-ade8-4981-84f3-b67ccd57368f"  style='display: block;
-  margin-left: auto;
-  margin-right: auto;'/>
-![Screenshot 2023-11-25 073742](https://github.com/ahdithya/stroke-prediction/assets/91508590/a54053a8-ade8-4981-84f3-b67ccd57368f)
-![Screenshot 2023-11-25 073747](https://github.com/ahdithya/stroke-prediction/assets/91508590/88601e8a-241a-4164-8c0e-389d00917e6f)
-![Screenshot 2023-11-25 073809](https://github.com/ahdithya/stroke-prediction/assets/91508590/06a7db76-5bf2-4adb-ba78-67d3728baa07)
-![Screenshot 2023-11-25 073815](https://github.com/ahdithya/stroke-prediction/assets/91508590/5bbd63e8-4758-4c32-9263-2f372c9f09d7)
-![Screenshot 2023-11-25 073823](https://github.com/ahdithya/stroke-prediction/assets/91508590/6bee6502-3968-4628-935e-a5ef670911a8)
-![Screenshot 2023-11-25 073835](https://github.com/ahdithya/stroke-prediction/assets/91508590/ca5de0d2-a71e-44d8-9e1b-724a00e251ec)
+Terdapat 1 nilai error yaitu Others, maka nilai tersebut akan dihapus.
 
-    Terdapat 1 nilai error yaitu Others, maka nilai tersebut akan dihapus.
+![Screenshot 2023-11-25 073747]()
+![Screenshot 2023-11-25 073809]()
+![Screenshot 2023-11-25 073815]()
+![Screenshot 2023-11-25 073823]()
+![Screenshot 2023-11-25 073835]()
+
+    
   - Pada Setiap Feature selanjutnya tidak terjadi nilai error, akan tetapi penyebaran data tiap feature tidak merata yang mungkin dapat menyebabkan bias
    img
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/881a8801-13a7-4b8d-9de5-045272811584"  style='display: block;
+      margin-left: auto;
+      margin-right: auto;'/>
+  </div><br>
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/a54053a8-ade8-4981-84f3-b67ccd57368f"  style='display: block;
+      margin-left: auto;
+      margin-right: auto;'/>
+  </div><br>
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/88601e8a-241a-4164-8c0e-389d00917e6f"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/06a7db76-5bf2-4adb-ba78-67d3728baa07"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/5bbd63e8-4758-4c32-9263-2f372c9f09d7"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/6bee6502-3968-4628-935e-a5ef670911a8"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/ca5de0d2-a71e-44d8-9e1b-724a00e251ec"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
 
+  
 #### Numerical Features
 - Penyebaran data untuk feature BMI dan Age cukup normal akan tetapi tidak pada feature Avg_glucosa_lvl yang cenderung miring ke kanan
+<div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/a9f2f52f-8333-4652-9bcb-9cecc5a1a946"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
 
 ### Multivariet Analysis
 #### Categorical Feature
 - Feature Gender
     feature gender tidak memiliki korelasi terhadap penyebab stroke
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/43957849-98d7-498a-a56f-0f4485d910c1"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+ 
 - Feature Hypertension
     feature Hypertension memiliki korelasi penyebab stroke jika seseorang memiliki hypertensi
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/b299f367-b8c3-4495-b726-52ac77e5dade"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+
 - Feature Heart Disease
     feature Heart Disease memiliki pengaruh penyebab terjadi stroke jika seseorang memiliki heart disease
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/7f754b13-7de0-48ee-9374-f55955949a70"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+
 - Feature ever Married
-    feature ever Married memilikki pengaruh terjadinya stroke 
+    feature ever Married memilikki pengaruh terjadinya stroke
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/78f85712-aa9e-4ece-876a-b6119c400903"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+
 - Feature Work_type
     Feature work type memiliki pengaruh terhadap terjadinya seseorang stroke
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/351acae8-c508-429b-a555-f8a700a596e5"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+
 - Feature Residance type
     feature residance type tidak terlalu mempengaruhi seseorang terjadinya stroke atau tidak
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/0a26744d-979c-4279-82c8-1c97a48bd8e3"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+
 - Feature smoking_status
     feature smoking status memiliki pengaruh seseorang terkan stroke atau tidak
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/09ad6dba-6fc0-49cc-b541-40db1a5afe12"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
 
 #### Numerical Feature
 Korelasi antar numeric feature, tidak memiliki hubungan satu sama lain
+<div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/ce9d3a16-30d0-4f94-9826-a264729efa3f"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
 
 
 ## Data Preparation
@@ -177,7 +260,18 @@ img
  
  Hasil Evlauasi Proyek :
  - Accuracy
+   <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/9a0271bf-30b3-4cc8-ac59-1f6fe43fa418"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+
  - Acurracy Score
+  <div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/c96b44ae-2fc8-402d-a5e2-0c16447da3d2"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
 
 dari Hasil Evaluasi Accuracy Score tampak setiap model menunjukan hasil yang baik yaitu diatas 95%, akan tetapi jika diliat lebih detail Randome Forest memiliki hasil Evaluasi yang paling tinggi 
 
