@@ -273,5 +273,5 @@ img
     margin-right: auto;'/>
   </div><br>
 
-dari Hasil Evaluasi Accuracy Score tampak setiap model menunjukan hasil yang baik yaitu diatas 95%, akan tetapi jika diliat lebih detail Randome Forest memiliki hasil Evaluasi yang paling tinggi 
+dari Hasil Evaluasi Accuracy Score tampak setiap model menunjukan hasil yang baik yaitu diatas 95%, akan tetapi jika diliat lebih detail Randome Forest memiliki hasil Evaluasi yang paling tinggi dibanding model lainnya
 
