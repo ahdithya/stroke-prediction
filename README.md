@@ -324,5 +324,6 @@ Model Machine Learning yang dihasilkan dapat secara tepat memprediksi seseorang 
 
 REFERENCE :
 [1] Teknika, J., & Estian Pambudi, R. (n.d.). Teknika 16 (02): 221-226. IJCCS, x, No.x, 1–5.
+
 [2] Puspitawuri, A., Santoso, E., & Dewi, C. (2019). Diagnosis Tingkat Risiko Penyakit Stroke Menggunakan Metode K-Nearest Neighbor dan Naïve Bayes (Vol. 3, Issue 4). http://j-ptiik.ub.ac.id
 
