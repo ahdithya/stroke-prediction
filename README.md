@@ -301,6 +301,7 @@ dari Hasil Evaluasi Accuracy Score tampak setiap model menunjukan hasil yang bai
 
 
 Hasil Pengujian:
+
 5 data pertama pada data test
 |  y_true | prediksi_knn  | prediksi_svm  | prediksi_rfc   |   
 |---------|---------------|---------------|----------------|
