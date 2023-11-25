@@ -4,11 +4,13 @@ Disusun oleh: Aditya Atallah
 
 ## Domain Proyek
 ### Latar Belakang
-Stroke merupakan masalah kesehatan utama bagi masyarakat modern. Hal tersebut dikarenakan serangan stroke yang mendadak dapat mengakibatkan kematian, kecacatan fisik dan mental baik pada usia produktif maupun usia lanjut. Efek stroke bergantung pada bagian otak mana yang terluka dan seberapa parah pengaruhnya. Kematian secara mendadak dapat terjadi ketika seorang pasien mengalami stroke yang sangat parah (WHO, 2014).
+Stroke merupakan masalah kesehatan utama bagi masyarakat modern. Hal tersebut dikarenakan serangan stroke yang mendadak dapat mengakibatkan kematian, kecacatan fisik dan mental baik pada usia produktif maupun usia lanjut [1] Efek stroke bergantung pada bagian otak mana yang terluka dan seberapa parah pengaruhnya. Kematian secara mendadak dapat terjadi ketika seorang pasien mengalami stroke yang sangat parah (WHO, 2014). [2]
 
-Penyakit stroke dapat terjadi karena beberapa faktor, diantaranya tekanan darah, riwayat fibrilasi atrium, kolesterol, diabetes dan lain sebagainya. Selama ini penanganan penyakit stroke dilakukan secara manual, dimana pasien melakukan pemeriksaan pada dokter spesialis penyakit syaraf.
+Penyakit stroke dapat terjadi karena beberapa faktor, diantaranya tekanan darah, riwayat fibrilasi atrium, kolesterol, diabetes dan lain sebagainya. Selama ini penanganan penyakit stroke dilakukan secara manual, dimana pasien melakukan pemeriksaan pada dokter spesialis penyakit syaraf. [2]
 
-Dengan adanya faktor-faktor penyebab terjadinya stroke, dibutuhkanlah sebuah alat yang dapat mendeteksi seseorang dapat terindikasi dapat terkena stroke atau tidak. Melalui Pendekatan machine learning hal itu dapat dicapai sehingga dapat mengetahui seseorang dapat terkena stroke atau tidak
+Dengan adanya faktor-faktor penyebab terjadinya stroke, dibutuhkanlah sebuah alat yang dapat mendeteksi seseorang dapat terindikasi dapat terkena stroke atau tidak. Melalui Pendekatan machine learning hal itu dapat dicapai sehingga dapat mengetahui seseorang dapat terkena stroke atau tidak.
+
+Dengan adanya sebuah model prediksi stroke ini, ini akan membantu pihak yang berwenang dalam hal ini rumah sakit dan dokter untuk melakukan pencegahan dini terhadap pasien yang memiliki kemungkinan terkena stroke 
 
 Referensi
 - [Klasifikasi Penyakit Stroke Menggunakan Algoritma Decision Tree C.45](https://jurnal.polsri.ac.id/index.php/teknika/article/view/4914)
@@ -23,7 +25,7 @@ Referensi
 ### Goals
 - Mengetahui fitur yang dapat menyebabkan stroke
 - Melakukan _Pre-processing_ data sebelum digunakan pada model
-- Membuat Model Machine Learning yang dapat mengklasifikasikan seseorang terkena stroke atau tidak seakurat mungkin
+- Membuat Model Machine Learning yang dapat mengklasifikasikan seseorang terkena stroke secara akurat yaitu dengan memiliki tingkat akurasi 95%
 
 ### Solution Statements
 - Menggunakan beberapa algoritma machine learning, dalam proyek ini akan menggunakan Random Forest, KNN dan Suport Vector Machine (SVM).
@@ -74,11 +76,6 @@ Berikut Tampilan hasil Statistik Data pada feature bertipe numeric
 </div><br>
 Terdapat 1 nilai error yaitu Others, maka nilai tersebut akan dihapus.
 
-![Screenshot 2023-11-25 073747]()
-![Screenshot 2023-11-25 073809]()
-![Screenshot 2023-11-25 073815]()
-![Screenshot 2023-11-25 073823]()
-![Screenshot 2023-11-25 073835]()
 
     
   - Pada Setiap Feature selanjutnya tidak terjadi nilai error, akan tetapi penyebaran data tiap feature tidak merata yang mungkin dapat menyebabkan bias
@@ -122,8 +119,10 @@ Terdapat 1 nilai error yaitu Others, maka nilai tersebut akan dihapus.
   
 #### Numerical Features
 - Penyebaran data untuk feature BMI dan Age cukup normal akan tetapi tidak pada feature Avg_glucosa_lvl yang cenderung miring ke kanan
+
+
 <div>
-    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/a9f2f52f-8333-4652-9bcb-9cecc5a1a946"  style='display: block;
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/b368125b-fae0-4a25-951d-9e0db0c4f4d0"  style='display: block;
     margin-left: auto;
     margin-right: auto;'/>
   </div><br>
@@ -249,15 +248,38 @@ Pada Proyek ini menggunakan 3 Algoritma yaitu K-Neighbors Classifer, Support Vec
          
 - Hyperparameter Tuning
     Hyperparameter tuning adalah proses mencari kombinasi optimal dari hyperparameter untuk suatu model machine learning dengan tujuan meningkatkan performa model. Menentukan hyperparameter yang optimal dapat membantu meningkatkan kinerja model dan mengurangi risiko overfitting atau underfitting. pada proyek menggunakan GridSearch dalam mencari parameter yang telah ditentukan
-
+  - K-Neighbors Classifer
+    Parameter:
+    - 'n_neighbors' : 4
+  - Random Forest Classifer
+    - 'n_estimators': 50
+    - 'max_depth': None
+    - 'min_samples_split': 2
+    - 'min_samples_leaf': 1
+  - Support Vector Machine Classifer
+    - 'C': 0.1
+    - 'kernel': 'linear
+    - 'gamma': 0.1
+   
+  
 Dari Hasil Model dan Hyperparamter Tuning yang digunakan, Algoritma terbaik yang dapat digunakan adalah Random Forest 
 
 ## Evaluasi 
 Accuracy score adalah suatu metrik evaluasi yang umum digunakan dalam masalah klasifikasi untuk mengukur sejauh mana model klasifikasi dapat membuat prediksi yang benar. Metrik ini mengukur persentase jumlah prediksi yang tepat dibandingkan dengan jumlah total sampel.
 img
 
- Dalam Klasifikasi Binir, jumlah prediksi benar dapat dihitung sebagai jumlah True Positives (TP) dan True Negatives (TN), sedangkan jumlah total sampel adalah jumlah seluruh sampel (termasuk False Positives dan False Negatives).
- 
+ Dalam Klasifikasi Biner, jumlah prediksi benar dapat dihitung sebagai jumlah True Positives (TP) dan True Negatives (TN), sedangkan jumlah total sampel adalah jumlah seluruh sampel (termasuk False Positives dan False Negatives).
+<div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/d5d112cb-2c56-40f1-8f51-096106947d16"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+<div>
+    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/a1621729-91d1-4d09-b397-4d4feb25be45"  style='display: block;
+    margin-left: auto;
+    margin-right: auto;'/>
+  </div><br>
+
  Hasil Evlauasi Proyek :
  - Accuracy
    <div>
@@ -265,6 +287,11 @@ img
     margin-left: auto;
     margin-right: auto;'/>
   </div><br>
+  |  | Train  | Test  |
+|---|---|---|---|---|
+| SVC  |  0.969149	 | 0.96204  |  
+|  KNN |  0.968852 | 0.959668 |  
+|  RFC |  0.999703	 | 0.96204 |  
 
  - Acurracy Score
   <div>
@@ -272,6 +299,30 @@ img
     margin-left: auto;
     margin-right: auto;'/>
   </div><br>
+  Gambar Hasil Akurasi score dimana semakin mendekati 1 hasil model semakin bagus akurasi model tersebut.
 
 dari Hasil Evaluasi Accuracy Score tampak setiap model menunjukan hasil yang baik yaitu diatas 95%, akan tetapi jika diliat lebih detail Randome Forest memiliki hasil Evaluasi yang paling tinggi dibanding model lainnya
+
+
+Hasil Pengujian:
+5 data pertama pada data test
+|  y_true | prediksi_knn  | prediksi_svm  | prediksi_rfc   |   
+|---|---|---|---|---|
+| 0  |  0 | 0  | 0  |   
+|  0 |  0 | 0  |  0 |   
+|  0 |  0 | 0  |  0 |   
+|  0 |  0 | 0  |  0 |   
+|  0 |  0 | 0  |  0 |   
+
+
+Pada pengujian data test, semua mengklasifikasikan data test dengan benar dimana hasil y_true adalah 0 yang artinya tidak terkena stroke dan hasil prediksi tiap model juga menunjukan angka 0 yang artinya sesuai dengan hasil sebenarnya. sehingga setiap model mampu memprediksi seseorang terkena stroke atau tidak. akan tetapi disini akan menggunakan model Random Forest Classifier sebagai model utama dikarenakan tingkat akurasi yang diberikan lebih tinggi dibanding model lainnya.
+
+
+## Kesimpulan
+Model Machine Learning yang dihasilkan dapat secara tepat memprediksi seseorang terkan stroke atau tidak. hal ini dapat membantu pengembangan pada bidang medis dengan menggunakan machine learning untuk mempermudah melakukan tindak pencegahan ketika pasien memiliki tanda-tanda stroke atau tidak
+
+
+REFERENCE :
+[1] Teknika, J., & Estian Pambudi, R. (n.d.). Teknika 16 (02): 221-226. IJCCS, x, No.x, 1–5.
+[2] Puspitawuri, A., Santoso, E., & Dewi, C. (2019). Diagnosis Tingkat Risiko Penyakit Stroke Menggunakan Metode K-Nearest Neighbor dan Naïve Bayes (Vol. 3, Issue 4). http://j-ptiik.ub.ac.id
 
