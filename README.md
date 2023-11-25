@@ -216,7 +216,7 @@ Pada Proyek ini menggunakan 3 Algoritma yaitu K-Neighbors Classifer, Support Vec
         Sensitif terhadap Outlier
         Memerlukan Penyesuaian Parameter 
     - parameter 
-        + 'n_neighbors' : Menentukan jumlah tetangga terdekat yang akan dipertimbangkan
+        + `n_neighbors` : Menentukan jumlah tetangga terdekat yang akan dipertimbangkan
 - Support Vector Machine Classifer
     Support Vector Machine (SVM) adalah algoritma machine learning yang digunakan untuk masalah klasifikasi dan regresi.  SVM berusaha menemukan batas keputusan (decision boundary) yang optimal untuk memisahkan dua kelas. Batas keputusan ini ditemukan dengan mencari hyperplane yang memiliki margin terbesar antara dua kelas. 
     - Kelebihan
@@ -228,9 +228,9 @@ Pada Proyek ini menggunakan 3 Algoritma yaitu K-Neighbors Classifer, Support Vec
         Komputasi yang Intensif: SVM dapat menjadi komputasi yang intensif, terutama jika datasetnya besar.
         Tidak Cocok untuk Dataset Besar: SVM mungkin kurang cocok untuk dataset yang sangat besar karena memerlukan memori dan waktu komputasi yang signifikan.
     - parameter
-        - 'C': Parameter yang mengontrol trade-off antara margin dan kesalahan klasifikasi.
-        - 'kernel': Jenis kernel yang akan digunakan (linear, polynomial, radial basis function (RBF), dll.).
-        - 'gamma': Koefisien kernel untuk 'rbf', 'poly', dan 'sigmoid'. Nilai yang tinggi akan menghasilkan margin yang lebih rendah dan lebih kompleks.
+        - `C`: Parameter yang mengontrol trade-off antara margin dan kesalahan klasifikasi.
+        - `kernel`: Jenis kernel yang akan digunakan (linear, polynomial, radial basis function (RBF), dll.).
+        - `gamma`: Koefisien kernel untuk 'rbf', 'poly', dan 'sigmoid'. Nilai yang tinggi akan menghasilkan margin yang lebih rendah dan lebih kompleks.
 - Random Forest Classifer
     Random Forest adalah algoritma ensemble yang digunakan untuk masalah klasifikasi dan regresi. Ensemble learning melibatkan penggabungan hasil beberapa model untuk meningkatkan kinerja dan ketahanan model terhadap overfitting. Random Forest mengoperasikan sekelompok pohon keputusan yang dihasilkan secara acak dan menggabungkan hasil prediksi mereka.
     - Kelebihan
@@ -241,25 +241,25 @@ Pada Proyek ini menggunakan 3 Algoritma yaitu K-Neighbors Classifer, Support Vec
         Interpretasi yang Sulit: Random Forest umumnya sulit untuk diinterpretasi, terutama ketika terdiri dari banyak pohon.
         Komputasi yang Intensif: Pelatihan Random Forest dapat menjadi komputasi yang intensif terutama pada dataset besar dan dengan jumlah pohon yang tinggi.
     - parameter
-        - 'n_estimators': Jumlah pohon dalam ensemble.
-        - 'max_depth': Kedalaman maksimum setiap pohon.
-        - 'min_samples_split': Jumlah sampel minimum yang diperlukan untuk membagi simpul internal.
-        - 'min_samples_leaf': Jumlah sampel minimum yang diperlukan untuk menjadi daun (simpul paling bawah).
+        - `n_estimators`: Jumlah pohon dalam ensemble.
+        - `max_depth`: Kedalaman maksimum setiap pohon.
+        - `min_samples_split`: Jumlah sampel minimum yang diperlukan untuk membagi simpul internal.
+        - `min_samples_leaf`: Jumlah sampel minimum yang diperlukan untuk menjadi daun (simpul paling bawah).
          
 - Hyperparameter Tuning
     Hyperparameter tuning adalah proses mencari kombinasi optimal dari hyperparameter untuk suatu model machine learning dengan tujuan meningkatkan performa model. Menentukan hyperparameter yang optimal dapat membantu meningkatkan kinerja model dan mengurangi risiko overfitting atau underfitting. pada proyek menggunakan GridSearch dalam mencari parameter yang telah ditentukan
   - K-Neighbors Classifer
     Parameter:
-    - 'n_neighbors' : 4
+    - `n_neighbors` : 4
   - Random Forest Classifer
-    - 'n_estimators': 50
-    - 'max_depth': None
-    - 'min_samples_split': 2
-    - 'min_samples_leaf': 1
+    - `n_estimators`: 50
+    - `max_depth`: None
+    - `min_samples_split`: 2
+    - `min_samples_leaf`: 1
   - Support Vector Machine Classifer
-    - 'C': 0.1
-    - 'kernel': 'linear
-    - 'gamma': 0.1
+    - `C`: 0.1
+    - `kernel`: 'linear
+    - `gamma`: 0.1
    
   
 Dari Hasil Model dan Hyperparamter Tuning yang digunakan, Algoritma terbaik yang dapat digunakan adalah Random Forest 
