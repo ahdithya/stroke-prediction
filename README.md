@@ -61,8 +61,7 @@ Berikut Tampilan hasil Statistik Data pada feature bertipe numeric
 <div>
   <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/bacaec0b-5cd0-4639-9cf6-43432d99426e"  style='display: block;
   margin-left: auto;
-  margin-right: auto;
-  width: 50%;'/>
+  margin-right: auto;'/>
 </div><br>
 
 ### Univariate Analysis
@@ -70,10 +69,14 @@ Berikut Tampilan hasil Statistik Data pada feature bertipe numeric
  - Feature Gender<div>
   <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/b26a415d-ffbf-4295-9733-5d4a061e00a0"  style='display: block;
   margin-left: auto;
-  margin-right: auto;
-  width: 50%;'/>
+  margin-right: auto;'/>
 </div><br>
-![Screenshot 2023-11-25 073724](https://github.com/ahdithya/stroke-prediction/assets/91508590/881a8801-13a7-4b8d-9de5-045272811584)
+<img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/881a8801-13a7-4b8d-9de5-045272811584"  style='display: block;
+  margin-left: auto;
+  margin-right: auto;'/>
+<img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/a54053a8-ade8-4981-84f3-b67ccd57368f"  style='display: block;
+  margin-left: auto;
+  margin-right: auto;'/>
 ![Screenshot 2023-11-25 073742](https://github.com/ahdithya/stroke-prediction/assets/91508590/a54053a8-ade8-4981-84f3-b67ccd57368f)
 ![Screenshot 2023-11-25 073747](https://github.com/ahdithya/stroke-prediction/assets/91508590/88601e8a-241a-4164-8c0e-389d00917e6f)
 ![Screenshot 2023-11-25 073809](https://github.com/ahdithya/stroke-prediction/assets/91508590/06a7db76-5bf2-4adb-ba78-67d3728baa07)
