@@ -28,7 +28,7 @@ Referensi
 ### Solution Statements
 - Menggunakan beberapa algoritma machine learning, dalam proyek ini akan menggunakan Random Forest, KNN dan Suport Vector Machine (SVM).
 - Melakukan _Hyperparameter tuning_ untuk meningkatkan akurasi model.
-- Melakukan Matrik evaluasi untuk mengevaluasi seberapa baik model dalam memprediksi/
+- Melakukan Matrik evaluasi untuk mengevaluasi seberapa baik model dalam memprediksi
 
 
 ## Data Understanding
@@ -65,4 +65,116 @@ Berikut Tampilan hasil Statistik Data pada feature bertipe numeric
   width: 50%;'/>
 </div><br>
 
+### Univariate Analysis
+#### Categorical Feature
+ - Feature Gender<div>
+  <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/b26a415d-ffbf-4295-9733-5d4a061e00a0"  style='display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;'/>
+</div><br>
+![Screenshot 2023-11-25 073724](https://github.com/ahdithya/stroke-prediction/assets/91508590/881a8801-13a7-4b8d-9de5-045272811584)
+![Screenshot 2023-11-25 073742](https://github.com/ahdithya/stroke-prediction/assets/91508590/a54053a8-ade8-4981-84f3-b67ccd57368f)
+![Screenshot 2023-11-25 073747](https://github.com/ahdithya/stroke-prediction/assets/91508590/88601e8a-241a-4164-8c0e-389d00917e6f)
+![Screenshot 2023-11-25 073809](https://github.com/ahdithya/stroke-prediction/assets/91508590/06a7db76-5bf2-4adb-ba78-67d3728baa07)
+![Screenshot 2023-11-25 073815](https://github.com/ahdithya/stroke-prediction/assets/91508590/5bbd63e8-4758-4c32-9263-2f372c9f09d7)
+![Screenshot 2023-11-25 073823](https://github.com/ahdithya/stroke-prediction/assets/91508590/6bee6502-3968-4628-935e-a5ef670911a8)
+![Screenshot 2023-11-25 073835](https://github.com/ahdithya/stroke-prediction/assets/91508590/ca5de0d2-a71e-44d8-9e1b-724a00e251ec)
+
+    Terdapat 1 nilai error yaitu Others, maka nilai tersebut akan dihapus.
+  - Pada Setiap Feature selanjutnya tidak terjadi nilai error, akan tetapi penyebaran data tiap feature tidak merata yang mungkin dapat menyebabkan bias
+   img
+
+#### Numerical Features
+- Penyebaran data untuk feature BMI dan Age cukup normal akan tetapi tidak pada feature Avg_glucosa_lvl yang cenderung miring ke kanan
+
+### Multivariet Analysis
+#### Categorical Feature
+- Feature Gender
+    feature gender tidak memiliki korelasi terhadap penyebab stroke
+- Feature Hypertension
+    feature Hypertension memiliki korelasi penyebab stroke jika seseorang memiliki hypertensi
+- Feature Heart Disease
+    feature Heart Disease memiliki pengaruh penyebab terjadi stroke jika seseorang memiliki heart disease
+- Feature ever Married
+    feature ever Married memilikki pengaruh terjadinya stroke 
+- Feature Work_type
+    Feature work type memiliki pengaruh terhadap terjadinya seseorang stroke
+- Feature Residance type
+    feature residance type tidak terlalu mempengaruhi seseorang terjadinya stroke atau tidak
+- Feature smoking_status
+    feature smoking status memiliki pengaruh seseorang terkan stroke atau tidak
+
+#### Numerical Feature
+Korelasi antar numeric feature, tidak memiliki hubungan satu sama lain
+
+
+## Data Preparation
+- One Hot Encoding
+    One-Hot Encoding adalah teknik yang mengubah data kategorik menjadi data numeric. Setiapdata  kategori menjadi kolom baru dengan nilai 0 atau 1.  Hal ini  sangat berguna ketika memiliki data kategori yang tidak dapat langsung digunakan dalam model matematis. Pada proyek ini fitur yang akan melakukan one hot encoding adalah hypertension,heart_disease,gender, ever_married, work_type, Residence_type, smoking_status
+- Train-Test Split
+    Melakukan Train-Test Split menjadi 2 kelompok data yaitu data Train yang digunakan untuk melatih model dan data test untuk melakukan pengujian setelah model dilatih. Hal ini dilakukan untuk menghasilkan model yang dapat memprediksi pada data yang belum pernah dilihat sebelumnya. pada proyek ini data dibagi menjadi 80% data train dan 20% data test
+- Standarization
+    Standarization adalah  proses yang dilakukan pada data numerik dalam analisis statistik dan machine learning untuk mengubah distribusi data sehingga memiliki rata-rata 0 dan deviasi standar 1. hal ini dilakukan untuk menyamakan scala data tanpa kehilangan nilai data yang sebenarnya
+
+
+## Modelling
+Pada Proyek ini menggunakan 3 Algoritma yaitu K-Neighbors Classifer, Support Vector Machine Classifer dan Random Forest Classifier
+- K-Neighbors Classifer
+    K-Nearest Neighbors (KNN) adalah algoritma yang digunakan untuk masalah klasifikasi dan regresi. algoritma ini bekerja dengan cara mengklasifikasikan suatu data berdasarkan mayoritas kelas dari k-nearest neighbors (tetangga terdekat) di sekitarnya. Jika suatu data memiliki mayoritas tetangga dari kelas A, maka data tersebut diklasifikasikan sebagai kelas A.
+    - Kelebihan
+        Sederhana dan Mudah Dimengerti
+        Tidak Memerlukan Training Modelnya langsung menggunakan data pelatihan untuk melakukan prediksi.
+        Kemampuan Menangani Data Nonlinear dan Multikelas yaitu KNN mampu menangani masalah klasifikasi multikelas.
+    - Kekurangan
+        Komputasi yang Tinggi
+        Sensitif terhadap Outlier
+        Memerlukan Penyesuaian Parameter 
+    - parameter 
+        + 'n_neighbors' : Menentukan jumlah tetangga terdekat yang akan dipertimbangkan
+- Support Vector Machine Classifer
+    Support Vector Machine (SVM) adalah algoritma machine learning yang digunakan untuk masalah klasifikasi dan regresi.  SVM berusaha menemukan batas keputusan (decision boundary) yang optimal untuk memisahkan dua kelas. Batas keputusan ini ditemukan dengan mencari hyperplane yang memiliki margin terbesar antara dua kelas. 
+    - Kelebihan
+        Efektif di Ruang Dimensi Tinggi terutama ketika jumlah fitur (variabel) lebih besar dari jumlah sampel.
+        Mampu Menangani Data yang Tidak Terpisah Linear: Dengan menggunakan kernel yang sesuai, SVM dapat menangani data yang tidak dapat dipisahkan secara linear.
+        Tahan terhadap Overfitting: SVM memiliki kemampuan untuk mengontrol overfitting melalui parameter 
+    - Kekurangan
+        Pemilihan Kernel yang Tidak Tepat: Pemilihan kernel yang tidak tepat dapat menghasilkan performa model yang buruk.
+        Komputasi yang Intensif: SVM dapat menjadi komputasi yang intensif, terutama jika datasetnya besar.
+        Tidak Cocok untuk Dataset Besar: SVM mungkin kurang cocok untuk dataset yang sangat besar karena memerlukan memori dan waktu komputasi yang signifikan.
+    - parameter
+        - 'C': Parameter yang mengontrol trade-off antara margin dan kesalahan klasifikasi.
+        - 'kernel': Jenis kernel yang akan digunakan (linear, polynomial, radial basis function (RBF), dll.).
+        - 'gamma': Koefisien kernel untuk 'rbf', 'poly', dan 'sigmoid'. Nilai yang tinggi akan menghasilkan margin yang lebih rendah dan lebih kompleks.
+- Random Forest Classifer
+    Random Forest adalah algoritma ensemble yang digunakan untuk masalah klasifikasi dan regresi. Ensemble learning melibatkan penggabungan hasil beberapa model untuk meningkatkan kinerja dan ketahanan model terhadap overfitting. Random Forest mengoperasikan sekelompok pohon keputusan yang dihasilkan secara acak dan menggabungkan hasil prediksi mereka.
+    - Kelebihan
+        Kinerja yang Tinggi: Random Forest cenderung memberikan kinerja yang tinggi karena menggabungkan prediksi dari beberapa pohon keputusan.
+        Ketahanan terhadap Overfitting: Dengan membangun pohon keputusan dari subset acak fitur dan sampel, Random Forest lebih tahan terhadap overfitting dibandingkan dengan pohon keputusan tunggal.
+        Kemampuan Menangani Data yang Tidak Seimbang: Random Forest dapat menangani ketidakseimbangan kelas dengan memberikan bobot yang seimbang pada setiap pohon.
+    - Kekurangan
+        Interpretasi yang Sulit: Random Forest umumnya sulit untuk diinterpretasi, terutama ketika terdiri dari banyak pohon.
+        Komputasi yang Intensif: Pelatihan Random Forest dapat menjadi komputasi yang intensif terutama pada dataset besar dan dengan jumlah pohon yang tinggi.
+    - parameter
+        - 'n_estimators': Jumlah pohon dalam ensemble.
+        - 'max_depth': Kedalaman maksimum setiap pohon.
+        - 'min_samples_split': Jumlah sampel minimum yang diperlukan untuk membagi simpul internal.
+        - 'min_samples_leaf': Jumlah sampel minimum yang diperlukan untuk menjadi daun (simpul paling bawah).
+         
+- Hyperparameter Tuning
+    Hyperparameter tuning adalah proses mencari kombinasi optimal dari hyperparameter untuk suatu model machine learning dengan tujuan meningkatkan performa model. Menentukan hyperparameter yang optimal dapat membantu meningkatkan kinerja model dan mengurangi risiko overfitting atau underfitting. pada proyek menggunakan GridSearch dalam mencari parameter yang telah ditentukan
+
+Dari Hasil Model dan Hyperparamter Tuning yang digunakan, Algoritma terbaik yang dapat digunakan adalah Random Forest 
+
+## Evaluasi 
+Accuracy score adalah suatu metrik evaluasi yang umum digunakan dalam masalah klasifikasi untuk mengukur sejauh mana model klasifikasi dapat membuat prediksi yang benar. Metrik ini mengukur persentase jumlah prediksi yang tepat dibandingkan dengan jumlah total sampel.
+img
+
+ Dalam Klasifikasi Binir, jumlah prediksi benar dapat dihitung sebagai jumlah True Positives (TP) dan True Negatives (TN), sedangkan jumlah total sampel adalah jumlah seluruh sampel (termasuk False Positives dan False Negatives).
+ 
+ Hasil Evlauasi Proyek :
+ - Accuracy
+ - Acurracy Score
+
+dari Hasil Evaluasi Accuracy Score tampak setiap model menunjukan hasil yang baik yaitu diatas 95%, akan tetapi jika diliat lebih detail Randome Forest memiliki hasil Evaluasi yang paling tinggi 
 
