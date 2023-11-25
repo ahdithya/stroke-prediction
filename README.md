@@ -58,5 +58,9 @@ Pada features id akan dihapus karena tidak memiliki hubungan dalam melakukan pre
 
 ### Hasil Statistik Data
 Berikut Tampilan hasil Statistik Data pada feature bertipe numeric
+<img src="https://user-images.githubusercontent.com/107544829/188319871-603b24b8-26b2-449b-b42e-59501a4803a7.png" width="220" style='display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;'/>
 ![Deskrisi](https://github.com/ahdithya/stroke-prediction/assets/91508590/8fe00908-5487-4085-80fc-fd6f0aa66c99)
 
