@@ -67,56 +67,53 @@ Berikut Tampilan hasil Statistik Data pada feature bertipe numeric
   margin-right: auto;'/>
 </div><br>
 
+|       | Age    | avg_glucose_level | bmi  |
+|-------|--------|-------------------|------|
+|count  | 5110   |51110              | 4909 |
+|mean   | 43.215 | 106.147           | 28.8 |
+| std   | 22.633 | 45.28             | 7.85 |
+|min    | 0      | 55.12             | 10.3 |
+| 25%   | 25     | 77.245            | 23.5 |
+| 50%   | 45     | 91.885            | 28.1 |
+| 75%   | 61     | 114.09            | 33.1 |
+| max   | 82     | 271.74            | 97.6 |
+
 ### Univariate Analysis
 #### Categorical Feature
  - Feature Gender
-   <div>
-  <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/b26a415d-ffbf-4295-9733-5d4a061e00a0"  style='display: block;
-  margin-left: auto;
-  margin-right: auto;'/>
-</div><br>
+    |Sample | Pria   | Wanita | Others | 
+    |-------|--------|--------|--------|
+    |Gender | 2513   |1701    | 1      |
 Terdapat 1 nilai error yaitu Others, maka nilai tersebut akan dihapus.
 
 
     
-  - Pada Setiap Feature berikut ini yaitu hypertension, heart_disease, ever_merried, work_type, REsidence_type dan smoking_status tidak terjadi nilai error, akan tetapi penyebaran data tiap feature tidak merata yang mungkin dapat menyebabkan bias
-   img
-  <div>
-    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/881a8801-13a7-4b8d-9de5-045272811584"  style='display: block;
-      margin-left: auto;
-      margin-right: auto;'/>
-  </div><br>
-  <div>
-    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/a54053a8-ade8-4981-84f3-b67ccd57368f"  style='display: block;
-      margin-left: auto;
-      margin-right: auto;'/>
-  </div><br>
-  <div>
-    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/88601e8a-241a-4164-8c0e-389d00917e6f"  style='display: block;
-    margin-left: auto;
-    margin-right: auto;'/>
-  </div><br>
-  <div>
-    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/06a7db76-5bf2-4adb-ba78-67d3728baa07"  style='display: block;
-    margin-left: auto;
-    margin-right: auto;'/>
-  </div><br>
-  <div>
-    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/5bbd63e8-4758-4c32-9263-2f372c9f09d7"  style='display: block;
-    margin-left: auto;
-    margin-right: auto;'/>
-  </div><br>
-  <div>
-    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/6bee6502-3968-4628-935e-a5ef670911a8"  style='display: block;
-    margin-left: auto;
-    margin-right: auto;'/>
-  </div><br>
-  <div>
-    <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/ca5de0d2-a71e-44d8-9e1b-724a00e251ec"  style='display: block;
-    margin-left: auto;
-    margin-right: auto;'/>
-  </div><br>
-
+  - Pada Setiap Feature berikut ini yaitu hypertension, heart_disease, ever_merried, work_type, Residence_type dan smoking_status tidak terjadi nilai error, akan tetapi penyebaran data tiap feature tidak merata yang mungkin dapat menyebabkan bias
+   - Hypertension
+        |Sample | 0  | 1 |  
+        |-------|--------|--------|
+        |Hypertension| 3923 |292     | 
+    - Heart_disease
+        |Sample | 0  | 1 |  
+        |-------|--------|--------|
+        |Heart_disease| 4060 |155     | 
+    - Ever_married
+        |Sample | Yes  | No |  
+        |-------|--------|--------|
+        |Ever_married| 2642 |1573     |
+    - Work_type
+        |Sample | Private | Self-Employed | Children  |Govt_job | Never_worked |
+        |-------|--------|--------|---|-------|--------|
+        |Work_type | 2412 |629     | 620 | 532  | 22 |
+    - Resident_type
+        |Sample | Urban  | Rural |  
+        |-------|--------|--------|
+        |Resident_type| 2138 |2077     | 
+    - smoking_status
+        |Sample | never_smoked |unknown |formly_smoked  |smokes |
+        |-------|--------|--------|--|--|
+        |Smoking_status| 1569 |1339     | 671  |636 |
+  
   
 #### Numerical Features
 - Penyebaran data untuk feature BMI dan Age cukup normal akan tetapi tidak pada feature Avg_glucosa_lvl yang cenderung miring ke kanan
