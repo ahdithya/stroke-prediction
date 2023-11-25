@@ -89,30 +89,36 @@ Terdapat 1 nilai error yaitu Others, maka nilai tersebut akan dihapus.
 
     
   - Pada Setiap Feature berikut ini yaitu hypertension, heart_disease, ever_merried, work_type, Residence_type dan smoking_status tidak terjadi nilai error, akan tetapi penyebaran data tiap feature tidak merata yang mungkin dapat menyebabkan bias
-   - Hypertension
-        |Sample | 0  | 1 |  
-        |-------|--------|--------|
-        |Hypertension| 3923 |292     | 
-    - Heart_disease
-        |Sample | 0  | 1 |  
-        |-------|--------|--------|
-        |Heart_disease| 4060 |155     | 
-    - Ever_married
-        |Sample | Yes  | No |  
-        |-------|--------|--------|
-        |Ever_married| 2642 |1573     |
-    - Work_type
-        |Sample | Private | Self-Employed | Children  |Govt_job | Never_worked |
-        |-------|--------|--------|---|-------|--------|
-        |Work_type | 2412 |629     | 620 | 532  | 22 |
-    - Resident_type
-        |Sample | Urban  | Rural |  
-        |-------|--------|--------|
-        |Resident_type| 2138 |2077     | 
-    - smoking_status
-        |Sample | never_smoked |unknown |formly_smoked  |smokes |
-        |-------|--------|--------|--|--|
-        |Smoking_status| 1569 |1339     | 671  |636 |
+     - Hypertension
+          |Sample | 0  | 1 |  
+          |-------|--------|--------|
+          |Hypertension| 3923 |292     |
+
+       
+      - Heart_disease
+          |Sample | 0  | 1 |  
+          |-------|--------|--------|
+          |Heart_disease| 4060 |155     |
+
+      - Ever_married
+          |Sample | Yes  | No |  
+          |-------|--------|--------|
+          |Ever_married| 2642 |1573     |
+
+      - Work_type
+          |Sample | Private | Self-Employed | Children  |Govt_job | Never_worked |
+          |-------|--------|--------|---|-------|--------|
+          |Work_type | 2412 |629     | 620 | 532  | 22 |
+
+      - Resident_type
+          |Sample | Urban  | Rural |  
+          |-------|--------|--------|
+          |Resident_type| 2138 |2077     |
+        
+      - smoking_status
+          |Sample | never_smoked |unknown |formly_smoked  |smokes |
+          |-------|--------|--------|--|--|
+          |Smoking_status| 1569 |1339     | 671  |636 |
   
   
 #### Numerical Features
