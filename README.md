@@ -61,11 +61,6 @@ Pada features id akan dihapus karena tidak memiliki hubungan dalam melakukan pre
 
 ### Hasil Statistik Data
 Berikut Tampilan hasil Statistik Data pada feature bertipe numeric
-<div>
-  <img src="https://github.com/ahdithya/stroke-prediction/assets/91508590/bacaec0b-5cd0-4639-9cf6-43432d99426e"  style='display: block;
-  margin-left: auto;
-  margin-right: auto;'/>
-</div><br>
 
 |       | Age    | avg_glucose_level | bmi  |
 |-------|--------|-------------------|------|
